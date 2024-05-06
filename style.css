@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Ropa Sans", sans-serif;
+}
+
+.main_container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.login_box {
+    width: 33.33%;
+    background-color: rgb(16, 16, 16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    >*{
+        color: aliceblue;
+    }
+}
+
+a{
+    color: rgb(231, 176, 24);
+
+}
+
+.promot_box{
+    width: 66.66%;
+    background-image: url(/bg_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.spacer50px{
+    height: 50px;
+}
+
+.username, .password{
+    padding: 10px;
+    min-width: 300px;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+    background-color: rgb(44, 44, 44);
+}
+
+.btn, .createAcc>*{
+    padding: 10px;
+    min-width: 320px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: transparent;
+    border: solid 1px rgb(190, 87, 8);
+    color: white;
+}
+
+.btn{
+    background-color: rgb(190, 87, 8);
+}
+
+
+.forgot_pass, .company_scl, .or, .copyrightTxt{
+    padding: 10px;
+}
+
+.promot_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    >*{
+        color: aliceblue;
+    }
+}
+
+.right_txt{
+    text-align: center;
+
+}
+
+@media screen and (max-width: 1150px) {
+    
+    .login_box{
+        width: 50%;
+    }
+    .promot_box{
+        width: 50%;
+    }
+    
+}
+
+@media screen and (max-width: 760px) {
+    .main_container{
+        flex-direction: row;
+    }
+
+    .login_box{
+        width: 100%;
+    }
+    .promot_box{
+        width: 100%;
+        min-height: 250px;
+    }
+    
+}
